@@ -10,7 +10,7 @@
 
 <body>
 
-        <!-- MENU DE NAVEGAÇÃO -->
+    <!-- MENU DE NAVEGAÇÃO -->
 
     <section class="navegacao" id="navegacao">
         <nav class="nav">
@@ -47,7 +47,7 @@
     </section>
 
 
-        <!-- INÍCIO -->
+    <!-- INÍCIO -->
 
     <main id="inicio">
         <div class="inicio-bloco">
@@ -123,175 +123,124 @@
         </section>
 
 
-        <!-- Habilidades -->
+        <!-- HABILIDADES -->
 
         <section class="section" id="habilidades">
             <h2 class="section-titulo" data-heading="Minhas Habilidadess">Minha Experiência</h2>
 
-            <div class="habilidades-container container grade">
-
-                <div class="habilidades-content">
-                    <div class="habilidades-ativas">
-                        <div class="habilidades-lista grade">
-                            <div>
-                                <div class="habilidades-titulo">
-                                    <h3 class="habilidades-nome">HTML</h3>
-                                    <span class="habilidades-numero">80%</span>
-                                </div>
-
-                                <div class="habilidades-barra">
-                                    <span class="habilidades-porcentagem" style="width: 80%;"></span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="habilidades-titulo">
-                                    <h3 class="habilidades-nome">CSS</h3>
-                                    <span class="habilidades-numero">80%</span>
-                                </div>
-
-                                <div class="habilidades-barra">
-                                    <span class="habilidades-porcentagem" style="width: 80%;"></span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="habilidades-titulo">
-                                    <h3 class="habilidades-nome">JavaScript</h3>
-                                    <span class="habilidades-numero">60%</span>
-                                </div>
-
-                                <div class="habilidades-barra">
-                                    <span class="habilidades-porcentagem" style="width: 60%;"></span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="habilidades-titulo">
-                                    <h3 class="habilidades-nome">Python</h3>
-                                    <span class="habilidades-numero">40%</span>
-                                </div>
-
-                                <div class="habilidades-barra">
-                                    <span class="habilidades-porcentagem" style="width: 40%;"></span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="habilidades-titulo">
-                                    <h3 class="habilidades-nome">Pacote Office</h3>
-                                    <span class="habilidades-numero">90%</span>
-                                </div>
-
-                                <div class="habilidades-barra">
-                                    <span class="habilidades-porcentagem" style="width: 90%;"></span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="habilidades-titulo">
-                                    <h3 class="habilidades-nome">SQL (MySQL)</h3>
-                                    <span class="habilidades-numero">60%</span>
-                                </div>
-
-                                <div class="habilidades-barra">
-                                    <span class="habilidades-porcentagem" style="width: 60%;"></span>
-                                </div>
-                            </div>
-                        </div>
+            <div class="container grade">
+                <div class="habilidades-container">
+                    <div class="habilidade">
+                        <img src="img/html-5.png" alt="icone-html">
+                        <p>HTML</p>
                     </div>
-
-        <!-- Projetos -->
-
-                    <section class="section" id="projetos">
-                        <h2 class="section-titulo" data-heading="Meus Trabalhos">Projetos</h2>
-
-                        <div class="projeto-container container grade">
-                            <div class="projeto-card">
-                                <a href="https://gametech-gustavob.netlify.app/">
-                                    <img src="img/projeto1.png" alt="Projeto 1" class="projeto-img">
-                                </a>
-                                <h3 class="projeto-titulo">GameTECH - Jogos Digitais</h3>
-                            </div>
-                        </div>
-                </div>
-        </section>
-
-        <!-- Contatos -->
-
-        <section class="section" id="contatos">
-            <h2 class="section-titulo" data-heading="Entre em contato">Meu Whatsapp</h2>
-
-            <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
-                <div class="grupo-form">
-                    <input placeholder="Nome" class="campo-form" id="nome">
-                </div>
-                <div class="grupo-form">
-                    <textarea placeholder="Digite sua Mensagem..." class="campo-form" rows="8" id="mensagem"></textarea>
-                </div>
-
-                <button type="submit" class="botao-form">Enviar Mensagem</button>
-            </form>
-
-        </section>
-
-        <script>
-            function enviarWhats(event) {
-                event.preventDefault()
-
-                const nome = document.getElementById('nome').value;
-                const mensagem = document.getElementById('mensagem').value;
-                const telefone = '5561998254253'
-
-                const texto = `Olá! Me chamo ${nome}, ${mensagem}`
-                const msgFormatada = encodeURIComponent(texto)
-
-                const url = `https://wa.me/${telefone}?text=${msgFormatada}`
-
-                window.open(url, '_blank')
-            }
-
-        </script>
-
-        <!-- Rodapé -->
-
-        <footer class="footer">
-            <div class="footer-bloco">
-                <div class="footer-container container grade">
-                    <div>
-                        <h1 class="footer-titulo">Gustavo Barbosa</h1>
-
+                    <div class="habilidade">
+                        <img src="img/css.png" alt="icone-css">
+                        <p>CSS</p>
                     </div>
-
-                    <ul class="footer-links">
-                        <li>
-                            <a href="#sobre" class="footer-links">Sobre mim</a>
-                        </li>
-                        <li>
-                            <a href="#projetos" class="footer-links">Projetos</a>
-                        </li>
-                        <li>
-                            <a href="#contatos" class="footer-links">Contatos</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer-social-links">
-                        <a href="https://www.instagram.com/gustavvb_/" target="_blank">
-                            <img src="icones/instagram.svg" alt="Instagram">
-                        </a>
-
-                        <a href="https://github.com/gustavob63" target="_blank">
-                            <img src="icones/github.svg" alt="GitHub">
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/gustavo-barbosa-oliveira-436b25351/" target="_blank">
-                            <img src="icones/linkedin.svg" alt="LinkedIn">
-                        </a>
+                    <div class="habilidade">
+                        <img src="img/script-java.png" alt="icone-javascript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="habilidade">
+                        <img src="img/python.png" alt="icone-python">
+                        <p>Python</p>
+                    </div>
+                    <div class="habilidade">
+                        <img src="img/servidor-sql.png" alt="icone-sql">
+                        <p>SQL</p>
                     </div>
                 </div>
-
             </div>
-        </footer>
+            </div>
+
+            <!-- PROJETOS -->
+
+            <section class="section" id="projetos">
+                <h2 class="section-titulo" data-heading="Meus Trabalhos">Projetos</h2>
+
+                <div class="projeto-container container grade">
+                    <div class="projeto-card">
+                        <a href="https://gametech-gustavob.netlify.app/">
+                            <img src="img/projeto1.png" alt="Projeto 1" class="projeto-img">
+                        </a>
+                        <h3 class="projeto-titulo">GameTECH - Jogos Digitais</h3>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!-- CONTATOS -->
+
+            <section class="section" id="contatos">
+                <h2 class="section-titulo" data-heading="Entre em contato">Meu Whatsapp</h2>
+
+                <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+                    <div class="grupo-form">
+                        <input placeholder="Nome" class="campo-form" id="nome">
+                    </div>
+                    <div class="grupo-form">
+                        <textarea placeholder="Digite sua Mensagem..." class="campo-form" rows="8"
+                            id="mensagem"></textarea>
+                    </div>
+
+                    <button type="submit" class="botao-form">Enviar Mensagem</button>
+                </form>
+
+            </section>
+
+            <script>
+                function enviarWhats(event) {
+                    event.preventDefault()
+
+                    const nome = document.getElementById('nome').value;
+                    const mensagem = document.getElementById('mensagem').value;
+                    const telefone = '5561998254253'
+
+                    const texto = `Olá! Me chamo ${nome}, ${mensagem}`
+                    const msgFormatada = encodeURIComponent(texto)
+
+                    const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+                    window.open(url, '_blank')
+                }
+
+            </script>
+
+            <!-- RODAPÉ -->
+
+            <footer class="footer">
+                <div class="footer-bloco">
+                    <div class="footer-container container grade">
+                        <div>
+                            <h1 class="footer-titulo">Gustavo Barbosa</h1>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#sobre" class="footer-links">Sobre mim</a>
+                            </li>
+                            <li>
+                                <a href="#projetos" class="footer-links">Projetos</a>
+                            </li>
+                            <li>
+                                <a href="#contatos" class="footer-links">Contatos</a>
+                            </li>
+                        </ul>
+
+                        <div class="footer-social-links">
+                            <a href="https://github.com/gustavob63" target="_blank">
+                                <img src="icones/github.svg" alt="GitHub">
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/gustavo-barbosa-oliveira-436b25351/" target="_blank">
+                                <img src="icones/linkedin.svg" alt="LinkedIn">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
     </main>
 </body>
 
