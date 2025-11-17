@@ -775,142 +775,272 @@ img {
 
 /* RESPONSIVIDADE */
 
-@media screen and (max-width: 1000px) {
-
-    .habilidades-container {
-        flex-direction: column;
-        align-items: center;
-        row-gap: 3rem;
+/* Telas até 1200px */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 90%;
     }
 
-    .habilidades-lista {
-        max-width: 500px;
+    .sobre-caixa {
+        padding: 30px;
     }
 
-    .projeto-container {
-        grid-template-columns: repeat(2, 1fr);
+    .dados-grid {
+        grid-template-columns: 1fr 1fr;
     }
-
 }
 
-@media screen and (max-width: 768px) {
 
-    .section {
-        padding: 4rem 0 1rem;
-    }
+/* Telas até 992px */
+@media (max-width: 992px) {
 
-    .section-titulo {
-        font-size: 1.75rem;
-    }
-
-    .menu {
-        display: none;
-        position: absolute;
-        top: 100px;
-        left: 0;
-        width: 100%;
-        height: auto;
-        background-color: hsl(242, 19%, 5%);
-        padding: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .menu.show-menu {
-        display: flex;
-    }
-
-    .nav-toggle-button {
-        display: block;
-    }
-
+    /* MENU */
     .menu-lista {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        gap: 15px;
     }
 
-    .menu-link {
-        padding: 0.5rem 0;
+    .titulo-inicio {
+        font-size: 32px;
+        margin-top: 180px;
     }
 
-    .menu-link::after {
-        display: none;
-    }
-
-    .inicio-container {
-        flex-direction: column;
-        padding-top: 100px;
-        align-items: center;
-        text-align: center;
-        height: auto;
-    }
-
-    .foto-de-perfil-container {
-        width: 280px;
-        height: 280px;
-        margin-bottom: 2rem;
-        transform: none;
-    }
-
-    .inicio-titulo {
-        font-size: 2.25rem;
-    }
-
-    .inicio-subtitulo,
-    .inicio-descricao {
-        max-width: 100%;
+    .subtitulo-inicio {
+        font-size: 20px;
     }
 
     .botao-inicial {
-        margin: 20px auto;
+        margin-top: 120px;
+    }
+
+    /* SOBRE */
+    .sobre-texto-apresentacao {
+        font-size: 1.5em;
+    }
+
+    .sobre-descricao {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* DADOS */
+    .dados-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    /* HABILIDADES */
+    .habilidades-container {
+        gap: 30px;
+    }
+
+    .habilidade {
+        width: 110px;
+        height: 110px;
+    }
+
+    /* PROJETOS */
+    .projeto-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Telas até 768px (tablet) */
+@media (max-width: 768px) {
+
+    /* MENU FIXO */
+    .navegacao {
+        height: 80px;
+    }
+
+    .menu-logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* INÍCIO */
+    .titulo-inicio {
+        margin-top: 140px;
+        font-size: 28px;
+    }
+
+    .subtitulo-inicio {
+        font-size: 18px;
+    }
+
+    .botao-inicial {
+        margin-top: 80px;
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
     }
 
     .meu-info {
         position: static;
-        margin-top: 30px;
+        margin-top: 40px;
         justify-content: center;
-        column-gap: 1rem;
-        flex-wrap: wrap;
-        width: 100%;
-        left: unset;
+        gap: 30px;
     }
 
-    .projeto-container {
+    /* SOBRE */
+    .sobre-caixa {
+        padding: 25px;
+    }
+
+    .dados-grid {
         grid-template-columns: 1fr;
     }
 
-    .formulario-contato {
-        padding: 1rem;
+    /* HABILIDADES */
+    .habilidades-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
     }
 
+    /* PROJETOS */
+    .projeto-card:hover {
+        transform: scale(1.03);
+    }
+
+    /* FORM WHATSAPP */
+    .formulario-contato {
+        padding: 1.5rem;
+    }
+}
+
+/* Telas até 576px (celular grande) */
+@media (max-width: 576px) {
+
+    /* MENU */
+    .menu-lista {
+        gap: 10px;
+    }
+
+    .menu-link {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+
+    /* INÍCIO */
+    .titulo-inicio {
+        font-size: 24px;
+        margin-top: 120px;
+    }
+
+    .subtitulo-inicio {
+        font-size: 16px;
+    }
+
+    .botao-inicial {
+        margin-top: 60px;
+        padding: 0.6rem 1.2rem;
+    }
+
+    /* SOCIAL LINKS */
+    .item-social-links {
+        gap: 20px;
+    }
+
+    .item-social-links img {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* SOBRE */
+    .sobre-texto-apresentacao {
+        font-size: 1.3em;
+    }
+
+    .sobre-descricao {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    /* HABILIDADES */
+    .habilidades-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .habilidade {
+        width: 95px;
+        height: 95px;
+    }
+
+    /* FORMULARIO */
     .botao-form {
         width: 100%;
     }
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
-        text-align: center;
-    }
-
+    /* RODAPÉ */
     .footer-links {
-        justify-content: center;
-        column-gap: 1.5rem;
-    }
-
-    .footer-social-links {
-        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
+
+/* Telas até 430px (celulares pequenos) */
+@media (max-width: 430px) {
+
+    .titulo-inicio {
+        font-size: 22px;
     }
 
-    .inicio-titulo {
-        font-size: 4rem;
+    .subtitulo-inicio {
+        font-size: 15px;
+    }
+
+    .meu-info {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .projeto-card {
+        padding: 1rem;
+    }
+
+    /* SOBRE */
+    .sobre-caixa {
+        padding: 15px;
+    }
+
+    /* HABILIDADES */
+    .habilidade {
+        width: 85px;
+        height: 85px;
+    }
+
+    .habilidade img {
+        width: 45px;
+        height: 55px;
+        margin-top: 3.2rem;
+    }
+
+    .habilidade p {
+        font-size: 0.8rem;
+        margin-top: 2.4rem;
+    }
+}
+
+
+/* Telas até 360px (muito pequeno) */
+@media (max-width: 360px) {
+
+    .titulo-inicio {
+        font-size: 20px;
+    }
+
+    .botao-inicial {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .habilidade {
+        width: 75px;
+        height: 75px;
+    }
+
+    .habilidade img {
+        width: 35px;
+        height: 45px;
+        margin-top: 3rem;
     }
 }
